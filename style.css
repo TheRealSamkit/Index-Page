@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mali", serif;
+}
+
+body {
+  flex-direction: column;
+  background-color: bisque;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+.title {
+  text-align: center;
+  padding: 1em;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: 9rem;
+  width: 22rem;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+.imgCon {
+  height: 9rem;
+  width: 21rem;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.2s;
+  margin: 1rem;
+}
+
+.base {
+  margin: 2rem;
+  height: calc(100vh - 4rem);
+  width: 100%;
+}
+
+.gameTitleCon {
+  width: 100%;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.imgCon:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .gameTitleCon {
+    flex-direction: column;
+  }
+}
